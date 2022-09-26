@@ -5,6 +5,9 @@ public class main {
 
         // задание 1
         checkLeapYear(1988);
+
+        // задание 2
+        checkPhone(1,2013);
     }
 
     public static void checkLeapYear(int year) {
@@ -13,6 +16,23 @@ public class main {
         } else {
             System.out.println(year + "  не високосный год");
         }
+    }
+
+
+    public static void checkPhone (int typeOS, int clientDeviceYear){
+        if (typeOS == 0) {
+            if (typeOS == 0 && clientDeviceYear < 2015){
+                System.out.println("Установите облегченную версию для IOS");
+            }else System.out.println("У вас IOS");
+        } else if (typeOS == 1) {
+            if (typeOS == 1 && clientDeviceYear < 2015) {
+                System.out.println("Устновите облегченную версию для Android");
+            } else System.out.println("У вас Android");
+        } else if (typeOS != 0 && typeOS != 1) {
+            System.out.println("Ошибка определения ОС");
+        }
+
+
     }
 }
 
