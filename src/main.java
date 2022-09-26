@@ -8,6 +8,9 @@ public class main {
 
         // задание 2
         checkPhone(1,2013);
+
+        // задание 3
+        deliveryDistance(50);
     }
 
     public static void checkLeapYear(int year) {
@@ -31,8 +34,15 @@ public class main {
         } else if (typeOS != 0 && typeOS != 1) {
             System.out.println("Ошибка определения ОС");
         }
-
-
+    }
+    public static void deliveryDistance (int distance) {
+        int days = 1;
+        if (distance >= 20 && distance < 60) {
+            days += 1;
+        } if (distance >= 60 && distance < 100) {
+            days += 2;
+        }
+        System.out.println("Потребуется дней " + days);
     }
 }
 
